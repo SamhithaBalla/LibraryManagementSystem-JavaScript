@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>User Check-in</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+    <style media="screen">
+      .selectcheckin{
+        background-color: #ffccbb;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text-center" style="margin-top:10px;">
+      <button type="button" name="button" id='home'><a href="lms.html">Home</a></button>
+     <!--  <button type="button" id="refresh">Refresh Fines</button> -->
+
+    </div>
+    <h3 align='center'>User Check-in</h3>
+    <form class="" action="lms4.php" method="post" align='center'>
+      <input type="text" name="checkin" value="" placeholder="Enter card no. or Borrower name or Book id" style="width:275px;" id="checkin">
+      <input type="submit" name="find" id="find" value="Find">
+    </form>
+    <div style="overflow-y:scroll; height: 550px;">
+      <div class="container text-center" id="fineDetails">
+
+      </div>
+      <div class="alert alert-danger text-center" style="display: none; margin-top:15px;">
+
+      </div>
+      <div class="alert alert-info text-center" style="display: none; margin-top:15px;">
+
+      </div>
+<div style="overflow-y:scroll; height: 550px;">
+    <table id="tableid" align="center" class="table table-hover table-bordered" style="width:80%; margin:10px auto">
+			<thead>
+			<tr>
+				<th>LOAN ID</th><th>CARD ID</th><th>ISBN</th><th>Name</th><th>Title</th>
+			</tr>
+			</thead>
+			<tbody style="cursor: pointer">
+			</tbody>
+		</table>
+  </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="lms4.js"></script>
+  </body>
+</html>

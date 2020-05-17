@@ -1,0 +1,65 @@
+<html>
+
+	<head>
+
+		
+		<Title>Library Management System</Title>
+
+		<div id="div2" align="left">
+
+			<button id ="userregister"><a href="lms3.html">New User Registration</a> </button>
+			<button id ="usercheckin"><a href="lms4.html">User Check-in</a></button>
+		</div>
+		
+
+		<h3 align="center">Library Management System</h3>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<script src="lms.js"></script>
+	</head>
+
+	<body>
+
+		<form align= "center" action="" method="post">
+
+			 <input id="search1" type="text" name="searchbar" size="40" autofocus><br>
+
+
+			<input id= "searchbutton" type="submit" value="Search For Books" >
+		</form>
+
+		
+		</br>
+		
+
+		<div class="buttons" id="div1" style="text-align:center">
+			<div id="div3">Library ID:<input id= "libid" type="text" name="Library ID"></br></div>
+
+			<button id ="checkoutb">Selection Complete?</button></br>
+
+			<p id="ask"></p>
+
+		</div>
+
+
+		</br>
+		
+		<div style="overflow-y:scroll; height: 500px;">
+		<table id="tableid" align="center" class="table table-hover table-bordered" style="width:80%; margin:10px auto">
+
+			
+			<thead>
+			<tr >
+				<th>ISBN</th><th>Title</th><th>Author</th><th>Availability</th><th>Select</th>
+			</tr>
+			</thead>
+
+			<tbody id="tbody0">
+			</tbody>
+		</table>
+		</div>
+		
+
+	</body>
+</html>

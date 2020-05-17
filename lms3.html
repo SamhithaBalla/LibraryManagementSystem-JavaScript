@@ -1,0 +1,40 @@
+<html>
+
+	<head>	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+ 		<script src="lms3.js"></script>	
+		<title>User Registration</title>
+		
+
+	</head>	
+
+	<body>
+		 <div class="text-center" style="margin-top:10px;">
+			<button id="home"><a href="lms.html">Home</a></button>
+		</div>
+		<div id ="userregistration" align="center">
+			<h4>New User Registration</h4>
+			
+			<form id= "userform" action="lms3.php" method="POST">
+				
+				SSN<br> <input id="ssn" type="text" name="ssn"></br>
+				First Name<br><input id="fname" name="fname"></br>
+				Last Name<br><input id="lname" name="lname"></br>
+				Email<br><input type="text" id="mail" name="mail"></br>
+				Address<br><input id="address" type="text" name="address"></br>
+				City<br><input id="city" type="text" name="city"></br>
+				State<br><input id="state" type="text" name="state"></br>
+				Phone<br><input id="phone" type="text" name="phone"></br>
+			</br>
+
+				<input id="registerbutton" type="submit" value="Register"></br>
+			</form>
+
+			<p id="msginfo"></p>
+
+
+		</div>
+	</body>	
+
+</html>
